@@ -14,6 +14,7 @@ const authRoute = require("./router/auth-router");
 const languageRoute = require("./router/language-router");
 const triviaTypesRoute = require("./router/triviatypes-router");
 const celebratyRoute = require("./router/celebraty-router");
+const timelineRoute = require("./router/timeline-router");
 
 
 const profileRoute = require("./router/profile-router");
@@ -55,6 +56,7 @@ app.use(express.json());
 // ✅ Static Files
 app.use('/professionalmaster', express.static(path.join(__dirname, 'public/professionalmaster')));
 app.use('/celebraty', express.static(path.join(__dirname, 'public/celebraty')));
+app.use('/timeline', express.static(path.join(__dirname, 'public/timeline')));
 
 app.use('/blog', express.static(path.join(__dirname, 'public/blog')));
 app.use('/profile', express.static(path.join(__dirname, 'public/profile')));
@@ -67,6 +69,9 @@ app.use("/api/professionalmaster", professionalmasterRoute);
 app.use("/api/language", languageRoute);
 app.use("/api/triviaTypes", triviaTypesRoute);
 app.use("/api/celebraty", celebratyRoute);
+app.use("/api/timeline",timelineRoute);
+
+
 
 app.use("/api/profile", profileRoute);
 app.use("/api/testimonial", testimonialsRoute);
