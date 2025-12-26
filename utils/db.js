@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-// const URI = "mongodb+srv://rajashrichougule:revl6FALUkbO6Bq8@task-manager.cgamqa5.mongodb.net/task-manager";
+// const URI = "mongodb+srv://airitham:4lvBGvh0gtUcoyH6@cluster0.ztg1e4d.mongodb.net/wefans";
 
 const URI =process.env.DB_URL;
 // mongoose.connect(URI);

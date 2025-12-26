@@ -71,8 +71,6 @@ app.use("/api/triviaTypes", triviaTypesRoute);
 app.use("/api/celebraty", celebratyRoute);
 app.use("/api/timeline",timelineRoute);
 
-
-
 app.use("/api/profile", profileRoute);
 app.use("/api/testimonial", testimonialsRoute);
 app.use("/api/blog",blogRoute);
