@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const URI = "mongodb+srv://airitham:4lvBGvh0gtUcoyH6@cluster0.ztg1e4d.mongodb.net/wefans";
+// const URI = "mongodb+srv://airitham:4lvBGvh0gtUcoyH6@cluster0.ztg1e4d.mongodb.net/wefans";
 
-// const URI =process.env.DB_URL;
+const URI =process.env.DB_URL;
 // mongoose.connect(URI);
 
 const connectDB = async () => {
